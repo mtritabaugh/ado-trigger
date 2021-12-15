@@ -7,8 +7,8 @@ resources:
     azureSubscription: dockerhub
     registry: mtritabaugh
     repository: petclinic
+    image: petclinic
     trigger: 
       tags:
         include: 
         - "*"
-
