@@ -1,0 +1,14 @@
+trigger: none
+
+resources:         
+  containers:
+  - container: petclinic
+    type: Docker
+    azureSubscription: dockerhub
+    registry: mtritabaugh
+    repository: petclinic
+    trigger: 
+      tags:
+        include: 
+        - "*"
+
