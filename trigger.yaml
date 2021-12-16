@@ -11,7 +11,8 @@ resources:
       tasks: false
       tools: false
       work: false
-
+    trigger: 
+      enabled: true
 
 stages:
 - stage: 'TEST'
