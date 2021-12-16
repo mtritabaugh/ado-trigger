@@ -14,7 +14,7 @@ resources:
 
 
 stages:
-- stage:
-  - jobs:
-    - job:
-      - script: echo 'hello'
+- stage: 'TEST'
+  jobs:
+  - job: 'Test job'
+    - script: echo 'hello'
