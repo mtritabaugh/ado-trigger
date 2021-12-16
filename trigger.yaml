@@ -1,14 +1,17 @@
 trigger: none
 
-resources:         
+resources:
   containers:
-  - container: petclinic
-    type: Docker
-    azureSubscription: dockerhub
-    registry: mtritabaugh
-    repository: petclinic
-    trigger: 
-      tags:
-        include: 
-        - "*"
+  - container: petclinic-ado
+    image: mtritabaugh/petclinic
+    endpoint: dockerhub
+    env: {}
+    ports: 8080
+    volumes: /tmp/test
+    mapDockerSocket: true
+    mountReadOnly: 
+      externals: false
+      tasks: false
+      tools: false
+      work: false
 
