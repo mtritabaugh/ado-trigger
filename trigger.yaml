@@ -13,6 +13,7 @@ resources:
       work: false
     trigger: 
       enabled: true
+        include: '*'
 
 stages:
 - stage: 'TEST'
