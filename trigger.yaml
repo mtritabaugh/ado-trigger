@@ -12,9 +12,8 @@ resources:
       tools: false
       work: false
     trigger: 
-      enabled: true
-        include:
-        - '*'
+      include:
+      - '*'
 
 stages:
 - stage: 'TEST'
