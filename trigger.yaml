@@ -3,11 +3,8 @@ trigger: none
 resources:
   containers:
   - container: petclinic-ado
-    image: mtritabaugh/petclinic
+    image: mtritabaugh/petclinic:latest
     endpoint: dockerhub
-    env: {}
-    ports: 8080
-    volumes: /tmp/test
     mapDockerSocket: true
     mountReadOnly: 
       externals: false
