@@ -11,3 +11,10 @@ resources:
       tasks: false
       tools: false
       work: false
+
+
+stages:
+- stage:
+  - jobs:
+    - job:
+      - script: echo 'hello'
