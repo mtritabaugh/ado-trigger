@@ -12,8 +12,9 @@ resources:
       tools: false
       work: false
     trigger: 
-      include:
-      - '*'
+      tags:
+        include:
+        - '*'
 
 stages:
 - stage: 'TEST'
